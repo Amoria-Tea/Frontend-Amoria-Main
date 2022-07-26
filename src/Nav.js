@@ -14,9 +14,11 @@ function Nav(props) {
         <nav class="hidden md:block" aria-labelledby="header-navigation">
           <h2 class="sr-only" id="header-navigation">Header navigation</h2>
           <ul class="flex gap-8 text-sm">
-            <a className='snail' class="text-teal-600 block" href="/">
-            <img src={Amoria} alt='logo' class='max-h-12'/>
+            <li className='nav-logo'>
+            <a class="text-teal-600 block" href="/">
+            <img className='snail' src={Amoria} alt='logo' class='max-h-12'/>
             </a>
+            </li>
             <li className='nav-text'>
               <a
                 class="text-gray-500 transition hover:text-gray-500/75"
