@@ -13,3 +13,8 @@
 .nav-text {
     margin-top: 20px;
 }
+
+.snail {
+    display: flex;
+    margin-top: 5px;
+}

@@ -1,19 +1,22 @@
 import React from 'react';
+import Amoria from './Amoria.png'
 
 function Nav(props) {
     return (
-<div>
-<header class="bg-white flex justify-end">
-  <div class="max-w-screen-xl px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-end h-16">
-      <div class="flex md:flex md:gap-10">
-    </div>
-
-      <div class="md:flex md:item">
+<>
+<div class='flex justify-end'>
+  <header class="bg-white">
+  <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex-1 md:flex md:items-center md:gap-12">
+      </div>
+      <div class="md:flex md:items-center md:gap-12">
         <nav class="hidden md:block" aria-labelledby="header-navigation">
           <h2 class="sr-only" id="header-navigation">Header navigation</h2>
-
           <ul class="flex gap-8 text-sm">
+            <a className='snail' class="text-teal-600 block" href="/">
+            <img src={Amoria} alt='logo' class='max-h-12'/>
+            </a>
             <li className='nav-text'>
               <a
                 class="text-gray-500 transition hover:text-gray-500/75"
@@ -86,16 +89,33 @@ function Nav(props) {
             </li>
           </ul>
         </nav>
-
-        <div>
-
+        
+          <div class="block md:hidden">
+            <button
+              class="p-2 text-gray-600 transition bg-gray-100 rounded hover:text-gray-600/75"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-
       </div>
     </div>
-  </div>
 </header>
-        </div>
+</div>
+</>
     );
 }
 
